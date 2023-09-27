@@ -942,7 +942,7 @@ img {
 }
 
 .contact__social-link{
-  /* background-color: var(--black-color-light); */
+  /* background-color: var(--black-color-light);  */
   padding: 6px;
   color: var(--white-color);
   font-size: 1.25rem;
@@ -955,6 +955,13 @@ img {
   background-color: var(--first-color);
 }
 
+.contact__message{
+  color: var(--white-color);
+  font-size: var(--smaller-font-size);
+  position: absolute;
+  bottom: -1.6rem;
+  left:0;
+}
 /*=============== FOOTER ===============*/
 
 

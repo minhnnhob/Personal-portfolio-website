@@ -355,7 +355,7 @@
                    heehehe
                   </h2>
 
-                  <form action="" class="contact__form">
+                  <form action="" class="contact__form" id="contact-form" >
                      <div class="contact__group">
                         <div class="contact__box">
                            <input type="text" name="user_name" class="contact__input" id="name" required placeholder="First Name">
@@ -376,6 +376,8 @@
                            <textarea name="user_message" id="message" cols="30" rows="10" class="contact__input" required placeholder="Message"></textarea>
                            <label for="name" class="contact__label">Message</label>
                         </div>
+
+                        <p class="contact__message" id="contact-message">oke bro</p>
 
                         <button type="submit" class="contact__button button">
                            <i class="ri-send-plane-line"></i> Send Message
@@ -432,7 +434,7 @@
       <script src=""></script>
       
       <!--=============== EMAIL JS ===============-->
-      
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
