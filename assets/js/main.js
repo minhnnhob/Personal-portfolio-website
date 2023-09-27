@@ -50,14 +50,12 @@ const sendEmail = (e)=>{
     emailjs.sendForm('service_s6tibuh','template_k9pejgc','#contact-form ','n_gKW5Ja05mI-CTeZ')
     .then(()=>{
         //
-        console.log('oke bro0')
         contactMessage.textContent = 'oke bro'
-        console.log('oke bro1')
 
         //
         setTimeout(()=>{
             contactMessage.textContent = ''
-        },5000)
+        },3000)
 
         //
         contactForm.reset()
