@@ -942,8 +942,9 @@ img {
 }
 
 .contact__social-link{
-  background-color: var(--black-color-light);
+  /* background-color: var(--black-color-light); */
   padding: 6px;
+  color: var(--white-color);
   font-size: 1.25rem;
   display: grid;
   place-items: center;
