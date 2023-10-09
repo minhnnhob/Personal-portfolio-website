@@ -958,7 +958,7 @@ body.dark-theme{
   opacity: 0;
 }
 
-.contact__from .contact__area{
+.contact__form .contact__area{
   height: 10rem;
 }
 
@@ -1157,11 +1157,16 @@ body.dark-theme{
 .contact__data{
   width: 350px;
   padding: 4rem 1.5rem;
+  justify-content: auto;
+}
+
+.contact__container{
+  grid-template-columns: 500px;
   justify-content: center;
 }
 
 .contact__group{
-  grid-template-columns: repeat(2,1fr);
+  /* grid-template-columns: repeat(2, 1fr ); */
   column-gap: 1rem;
 }
 
@@ -1500,7 +1505,7 @@ body.dark-theme{
 .projects__button{
   right: 1.25rem;
 }
-
+/* =========================================== */
 .contact__container{
   grid-template-columns: 440px 670px;
   grid-template-rows: initial;
@@ -1524,7 +1529,7 @@ body.dark-theme{
 }
 
 .contact__form .contact__area{
-  height: 1111rem;
+  height: 10rem;
 }
 
 .contact__button{
@@ -1559,7 +1564,7 @@ body.dark-theme{
 
 .contact__social-arrow{
   width: 40px;
-  margin-left: 16rem;
+  margin-left: 11rem;
 }
 
 .contact__social-link{
@@ -1569,13 +1574,13 @@ body.dark-theme{
 }
 
 .contact__social-links{
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 .contact__message{
   bottom: -2.5rem;
 }
-
+/* ========================================================================= */
 .dark-theme .contact__social-link{
   color: var(--white-color);
 }
