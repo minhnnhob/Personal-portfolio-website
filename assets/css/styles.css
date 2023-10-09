@@ -168,7 +168,7 @@ body.dark-theme{
   background-color: hsl(0, 0%, 40%);
 }
 
-.dark-theme .ri-linkedin-fill,.dark-theme .ri-facebook-fill,.dark-theme .ri-github-line{
+.dark-theme :is(.home i){
   color: var(--white-color);
 }
 
