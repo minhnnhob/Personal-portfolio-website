@@ -134,6 +134,8 @@ body.dark-theme{
   filter: none;
 }
 
+
+
 .dark-theme .home__description b{
   background-color: linear-gradient(90deg,
   hsla(14, 80%, 50%, .3), hsla(14, 80%, 50%, .0));
@@ -1115,9 +1117,76 @@ body.dark-theme{
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-
+@media screen and (min-width: 340px) {
+  .container{
+    margin-inline: 1rem;
+  }
+  
+  .home__image{
+    width: 180px;
+  }
+  
+  .about__image{
+    width: 180px;
+  }
+  
+  .about__shadow{
+    width: 330px;
+    right: -2.5rem;
+  }
+  
+  .contact__data{
+    width: 100%;
+  }
+  
+  .contact__data .section__title-2{
+    transform: translateX(0);
+  }
+  }
 
 /* For medium devices */
+@media screen and (min-width: 576px) {
+  
+.home__container,
+.about__container,
+.projects__container{
+  grid-template-columns: 350px;
+  justify-content: center;
+}
+
+.contact__data{
+  width: 350px;
+  padding: 4rem 1.5rem;
+  justify-content: center;
+}
+
+.contact__group{
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 1rem;
+}
+
+.contact__social{
+  background-color: transparent;
+}
+
+.contact__social-arrow{
+  filter: invert(1);
+}
+
+.contact__social-description-1{
+  color: var(--text-color);
+}
+
+.contact__social-description-2{
+  color: var(--title-color);
+}
+
+.dark-theme .contact__social-arrow{
+  filter: none;
+}
+
+}
+  
 
 
 /* For large devices */
@@ -1477,8 +1546,9 @@ body.dark-theme{
 }
 
 .contact__social{
-  margin-left: 8rem;
   text-align: initial;
+  margin-left: 8rem;
+  
 }
 
 .contact__social-data{
@@ -1489,19 +1559,28 @@ body.dark-theme{
 
 .contact__social-arrow{
   width: 40px;
+  margin-left: 16rem;
 }
 
 .contact__social-link{
   font-size: 1.5rem;
-  padding: .5rem;
+  padding: .2rem;
+  color: var(--black-color);
+}
+
+.contact__social-links{
+  margin-left: 3rem;
 }
 
 .contact__message{
   bottom: -2.5rem;
 }
 
+.dark-theme .contact__social-link{
+  color: var(--white-color);
+}
 .dark-theme .contact__data{
-  box-shadow: 4px 0 8pxx hsla(0, 0%, 4%, .3);
+  box-shadow: 4px 0 8px hsla(0, 0%, 4%, .3);
 }
 
 .footer__container{
