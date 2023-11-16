@@ -67,6 +67,14 @@ const sendEmail = (e)=>{
 
 contactForm.addEventListener('submit', sendEmail)
 /*=============== SHOW SCROLL UP ===============*/ 
+const scrollToTop = (event)=>{
+    event.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+}
+
 const scrollUp = ()=>{
     const scrollUp = document.getElementById('scroll-up')
 
@@ -75,6 +83,9 @@ const scrollUp = ()=>{
 }
 
 window.addEventListener('scroll',scrollUp)
+
+const scrollUpButton = document.getElementById('scroll-up')
+scrollUpButton.addEventListener('click', scrollToTop)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
