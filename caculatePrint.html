@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body style="margin-bottom: 30px">
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <h1 class="section__title-2">Tiệm in Minh Béo</h1>
+
+      <div
+        class="contact__mail"
+        style="margin-top: 30px; width: 800px; align-items: center"
+      >
+        <form action="" class="contact__form" id="print-form">
+          <div class="contact__group">
+            <div class="contact__box">
+              <input
+                type="number"
+                name="slt"
+                class="contact__input"
+                id="slt"
+                required
+                placeholder="VD: 1000"
+              />
+              <label for="name" class="contact__label">Số lượng tờ</label>
+            </div>
+
+            <div class="contact__box">
+              <select name="smi" id="smi" class="contact__input" required>
+                <option value="1">Một mặt</option>
+                <option value="2">Hai mặtmặt</option>
+              </select>
+              <label for="email" class="contact__label">Số mặt in</label>
+            </div>
+
+            <div class="contact__box">
+              <select name="lg" id="lg" class="contact__input" required>
+                <option value="A0">A0</option>
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+                <option value="A5">A5</option>
+                <option value="A6">A6</option>
+              </select>
+              <label for="email" class="contact__label">Số mặt in</label>
+            </div>
+
+            <div class="contact__box">
+              <input
+                type="number"
+                name="tttt"
+                class="contact__input"
+                id="tt"
+                required
+                disabled
+              />
+              <label for="tttt" class="contact__label">Tổng tiền</label>
+            </div>
+
+            <p class="contact__message" id="contact-message"></p>
+
+           
+           
+          </div>
+        </form>
+        <button class="contact__button button" onclick="gotoMinhBeo()">
+            <i class="ri-send-plane-line"></i> Tiếp tục
+          </button>
+        
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/caculatePrint.js"></script>
+  </body>
+</html>
